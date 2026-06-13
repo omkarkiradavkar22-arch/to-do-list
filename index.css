@@ -1,0 +1,151 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background: white;
+    width: 450px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h1 + div{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.title{
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.title:focus{
+    border-color: #667eea;
+}
+
+.add{
+    padding: 10px 20px;
+    border: none;
+    background: #667eea;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.add:hover{
+    background: #5568d8;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr:first-child{
+    background: #667eea;
+    color: white;
+}
+
+td{
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.del{
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.del:hover{
+    background: #e63939;
+}
+th{
+    padding: 12px;
+    text-align: left;
+}
+
+td:last-child{
+    text-align: right;
+    white-space: nowrap;
+}
+.edit{
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.edit:hover{
+    background: #218838;
+}
+
+@media (max-width: 600px){
+
+    body{
+        padding: 15px;
+    }
+
+    .container{
+        width: 100%;
+        padding: 20px;
+    }
+
+    h1{
+        font-size: 1.8rem;
+    }
+
+    h1 + div{
+        flex-direction: column;
+    }
+
+    .title{
+        width: 100%;
+    }
+
+    .add{
+        width: 100%;
+    }
+
+    td{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .del{
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+}
